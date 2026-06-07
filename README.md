@@ -4,7 +4,7 @@
 > and automatically dispatches GPS SOS via GSM upon adrenaline spike detection.
 
 **Status:** Prototype complete · Full vision in roadmap  
-**Developer:** Kritarth Awasthi | BIT Mesra, Jaipur  
+**Developer:** Kritarth Awasthi  
 **Duration:** January 2024 – May 2025
 
 ---
@@ -95,4 +95,4 @@ See `docs/system_architecture.md` for full wiring reference.
 
 ---
 
-*Kritarth Awasthi | BIT Mesra, Jaipur | Jan 2024 – May 2025*
+*Kritarth Awasthi | Jan 2024 – May 2025*
