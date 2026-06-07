@@ -22,10 +22,10 @@ A physical button provides manual override — one press enters ALERT mode
 
 ---
 ## How it works
-User activates panic trigger
-GSM SIM module auto-transmits SOS SMS with live GPS coordinates
-Emergency contacts receive location in under 60 seconds
-Companion Android app shows real-time tracking
+User activates panic trigger -
+GSM SIM module auto-transmits SOS SMS with live GPS coordinates -
+Emergency contacts receive location in under 60 seconds -
+Companion Android app shows real-time tracking -
 ---
 ## Hardware
 
