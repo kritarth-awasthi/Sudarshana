@@ -61,8 +61,8 @@ Using GSR alone produces false positives in humid conditions.
 Combined dual-threshold eliminates both false positive categories —
 both signals must be elevated simultaneously to trigger SOS.
 
-**Prototype:** Hardcoded threshold values (HR > 110 BPM + GSR > 600)  
-**Roadmap:** TFLite Micro ML model trained on WESAD stress dataset
+**Prototype:** Hardcoded threshold values (HR > 110 BPM + GSR > 600).
+**Roadmap:** TFLite Micro ML model trained on WESAD stress dataset.
 
 ---
 
