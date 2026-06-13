@@ -1,6 +1,6 @@
 # Sudarshana — IoT Safety Wearable
 
-> Wearable panic-detection device that monitors physiological stress indicators
+> Wearable panic-detection device that monitors physiological stress indicators.
 > and automatically dispatches GPS SOS via GSM upon adrenaline spike detection.
 
 **Status:** Prototype complete · Full vision in roadmap  
@@ -78,11 +78,11 @@ Location: https://maps.google.com/?q=26.912434,75.787271
 ## Setup
 
 1. Install required libraries (see `firmware/sudarshana_prototype/libraries.txt`)
-2. Open `firmware/sudarshana_prototype/sudarshana_prototype.ino` in Arduino IDE
-3. Edit `config.h` — set `EMERGENCY_NUMBER` and verify GPIO pins match your wiring
+2. Open `firmware/sudarshana_prototype/sudarshana_prototype.ino` in Arduino IDE.
+3. Edit `config.h` — set `EMERGENCY_NUMBER` and verify GPIO pins match your wiring.
 4. Select board: `ESP32 Dev Module`
-5. Flash at 115200 baud
-6. Monitor Serial at 115200 for debug output
+5. Flash at 115200 baud.
+6. Monitor Serial at 115200 for debug output.
 
 ---
 
