@@ -1,5 +1,5 @@
 # Sudarshana — Required Arduino Libraries
-# Install all via Arduino IDE Library Manager or PlatformIO
+# Install all via Arduino IDE Library Manager or PlatformIO.
 
 TinyGPS++           # GPS NMEA parsing — Mikal Hart
 SparkFun MAX3010x   # MAX30105 heart rate sensor — SparkFun Electronics  
