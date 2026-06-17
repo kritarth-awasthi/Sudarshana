@@ -1,11 +1,11 @@
 /*
  * ╔══════════════════════════════════════════════════════════════╗
- * ║                    S U D A R S H A N A                      ║
+ * ║                    S U D A R S H A N A                       ║
  * ║              IoT Safety Wearable — Prototype v1.0            ║
  * ║                                                              ║
- * ║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur           ║
- * ║  Hardware  : ESP32 + MAX30105 + GSR + SIM800L + NEO-6M      ║
- * ║  Status    : Prototype — SOS to hardcoded number            ║
+ * ║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur            ║
+ * ║  Hardware  : ESP32 + MAX30105 + GSR + SIM800L + NEO-6M       ║
+ * ║  Status    : Prototype — SOS to hardcoded number             ║
  * ╚══════════════════════════════════════════════════════════════╝
  *
  *  STATE MACHINE:
@@ -23,31 +23,31 @@
 #include "gps_handler.h"
 #include "sensor_handler.h"
 
-// ── System State Machine ──────────────────────────────────────────────────────
+// ── System State Machine 
 enum SystemState { STATE_IDLE, STATE_ALERT, STATE_PANIC };
 SystemState currentState = STATE_IDLE;
 
-// ── Hardware Serial Ports ─────────────────────────────────────────────────────
+// ── Hardware Serial Ports 
 HardwareSerial gsmSerial(1);  // SIM800L  → UART1: TX=GPIO17, RX=GPIO16
 HardwareSerial gpsSerial(2);  // NEO-6M   → UART2: TX=GPIO19, RX=GPIO18
 
-// ── Object Instances ──────────────────────────────────────────────────────────
+// ── Object Instances 
 TinyGPSPlus   gps;
 MAX30105      heartRateSensor;
 GSMHandler    gsm(&gsmSerial);
 GPSHandler    gpsHandler(&gpsSerial, &gps);
 SensorHandler sensors(&heartRateSensor);
 
-// ── Timing Variables ──────────────────────────────────────────────────────────
+// ── Timing Variables 
 unsigned long alertStartTime  = 0;
 unsigned long lastSensorRead  = 0;
 bool          sosConfirmed    = false;
 
-// ── Button Interrupt ──────────────────────────────────────────────────────────
+// ── Button Interrupt 
 volatile bool buttonPressed = false;
 void IRAM_ATTR onButtonPress() { buttonPressed = true; }
 
-// =============================================================================
+// ============================================================================
 void setup() {
   Serial.begin(115200);
   Serial.println(F("\n[SUDARSHANA] Booting..."));
@@ -82,7 +82,7 @@ void setup() {
   Serial.println(F("[SUDARSHANA] Boot complete. State: IDLE"));
 }
 
-// =============================================================================
+// ============================================================================
 void loop() {
   gpsHandler.update();
 
@@ -123,9 +123,9 @@ void loop() {
   }
 }
 
-// =============================================================================
+// ============================================================================
 // STATE TRANSITIONS
-// =============================================================================
+// ============================================================================
 void enterIdle() {
   currentState = STATE_IDLE;
   sensors.sleep();
@@ -150,9 +150,9 @@ void enterPanic() {
   Serial.println(F("[STATE] → PANIC"));
 }
 
-// =============================================================================
+// ============================================================================
 // BUTTON HANDLER
-// =============================================================================
+// ============================================================================
 void handleButtonPress() {
   Serial.println(F("[BUTTON] Triggered"));
   switch (currentState) {
@@ -162,18 +162,18 @@ void handleButtonPress() {
   }
 }
 
-// =============================================================================
+// ============================================================================
 // ADRENALINE SPIKE DETECTION
 // Combines HR elevation + GSR increase — both must exceed threshold.
 // ROADMAP: Replace with TFLite Micro ML model trained on stress datasets.
-// =============================================================================
+// ============================================================================
 bool isAdrenalineSpike(float heartRate, float gsrValue) {
   return (heartRate > HR_PANIC_THRESHOLD) && (gsrValue > GSR_PANIC_THRESHOLD);
 }
 
-// =============================================================================
+// ============================================================================
 // SOS DISPATCH
-// =============================================================================
+// ============================================================================
 void dispatchSOS() {
   Serial.println(F("[SOS] Building distress message..."));
 
