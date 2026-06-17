@@ -16,9 +16,9 @@ All device output was routed through the SIM800L GSM module.
 ## Full Vision Roadmap
 The complete application was designed to include:
 
-- **Contact Management** — select emergency contacts from phonebook
+- **Contact Management** — select emergency contacts from phonebook.
 - **Danger Zone Mapping** — mark specific geographic areas as danger zones
-  via Google Maps API; device automatically enters ALERT mode on entry
+  via Google Maps API; device automatically enters ALERT mode on entry.
 - **BLE Sync** — push selected contacts and danger zone polygons to
   ESP32 SPIFFS storage via Bluetooth Low Energy
 - **Live Tracking** — real-time location session when PANIC mode is active
