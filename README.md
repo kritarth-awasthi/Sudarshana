@@ -88,9 +88,9 @@ Location: https://maps.google.com/?q=26.912434,75.787271
 
 ## Full Vision Roadmap
 
-- [ ] Android app — contact selection, danger zone mapping, BLE sync to device
-- [ ] Geofencing — auto ALERT on entry into marked danger zones
-- [ ] Crime area auto-trigger — public dataset integration
+- [ ] Android app — contact selection, danger zone mapping, BLE sync to device.
+- [ ] Geofencing — auto ALERT on entry into marked danger zones.
+- [ ] Crime area auto-trigger — public dataset integration.
 - [ ] Multi-contact SOS dispatch
 - [ ] ML-based stress detection (TFLite Micro)
 - [ ] Nearest police station notification
