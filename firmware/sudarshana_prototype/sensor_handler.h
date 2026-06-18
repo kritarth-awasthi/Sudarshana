@@ -47,7 +47,7 @@ public:
     Serial.println(F("[SENSORS] Sleeping"));
   }
 
-  // Returns smoothed heart rate in BPM
+  // Returns smoothed heart rate in BPM.
   float getHeartRate() {
     if (!_sensorAwake) return 0.0f;
 
@@ -58,9 +58,9 @@ public:
       _lastBeat  = millis();
       _beatsPerMinute = 60.0f / (delta / 1000.0f);
 
-      // Sanity check — valid HR range
+      // Sanity check — valid HR range.
       if (_beatsPerMinute > 20 && _beatsPerMinute < 255) {
-        // Running average over 4 samples
+        // Running average over 4 samples.
         _rates[_rateSpot++] = (byte)_beatsPerMinute;
         _rateSpot %= RATE_SIZE;
         _beatAvg = 0;
@@ -71,8 +71,8 @@ public:
     return (float)_beatAvg;
   }
 
-  // Returns raw ADC reading from GSR sensor (0–4095)
-  // Higher value = higher skin conductance = higher stress
+  // Returns raw ADC reading from GSR sensor (0–4095).
+  // Higher value = higher skin conductance = higher stress.
   float getGSRReading() {
     int raw = analogRead(PIN_GSR_SENSOR);
     // Average 5 readings to reduce noise
@@ -88,7 +88,7 @@ private:
   MAX30105* _sensor;
   bool      _sensorAwake;
 
-  // Heart rate calculation
+  // Heart rate calculation.
   static const byte RATE_SIZE = 4;
   byte          _rates[RATE_SIZE];
   byte          _rateSpot   = 0;
