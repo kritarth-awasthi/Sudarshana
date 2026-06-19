@@ -8,7 +8,7 @@ Sudarshana was conceived as a complete personal safety ecosystem — not just a 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    SUDARSHANA ECOSYSTEM                      │
+│                    SUDARSHANA ECOSYSTEM                     │
 ├─────────────────┬───────────────────────┬───────────────────┤
 │   WEARABLE      │     ANDROID APP       │   CLOUD/ML        │
 │                 │                       │                   │
