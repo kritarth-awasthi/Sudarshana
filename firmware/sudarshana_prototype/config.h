@@ -5,17 +5,17 @@
 
 #pragma once
 
-// ── Emergency Contact (Prototype) ────────────────────────────────────────────
+// ── Emergency Contact (Prototype)
 // ROADMAP: Store multiple contacts fetched from Android app
 #define EMERGENCY_NUMBER      "+91XXXXXXXXXX"  // Replace with actual number
 
-// ── GPIO Pin Assignments ──────────────────────────────────────────────────────
+// ── GPIO Pin Assignments 
 #define PIN_PANIC_BUTTON       0    // Physical panic/alert toggle button
 #define PIN_ALERT_LED         25    // Yellow LED — alert mode indicator
 #define PIN_PANIC_LED         26    // Red LED — panic mode indicator
 #define PIN_GSR_SENSOR        34    // GSR analog input (ADC1 only on ESP32)
 
-// ── GSM (SIM800L) ─────────────────────────────────────────────────────────────
+// ── GSM (SIM800L) 
 #define GSM_TX_PIN            17
 #define GSM_RX_PIN            16
 #define GSM_BAUD           9600
