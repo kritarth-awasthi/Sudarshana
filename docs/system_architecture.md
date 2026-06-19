@@ -52,22 +52,22 @@ GND          ──── GND
                 │ ROADMAP: Geofence entry from Android app
                 ▼
 ┌─────────────────────────────────────────────────────────┐
-│                     STATE: ALERT                         │
-│  • Sensors powered ON                                    │
-│  • HR + GSR sampled every 1 second                       │
-│  • Adrenaline spike detection active                     │
-│  • LED: YELLOW solid                                     │
+│                     STATE: ALERT                        │
+│  • Sensors powered ON                                   │
+│  • HR + GSR sampled every 1 second                      │
+│  • Adrenaline spike detection active                    │
+│  • LED: YELLOW solid                                    │
 └───────────────┬─────────────────────────────────────────┘
                 │ isAdrenalineSpike() returns true
                 │ OR button press (2nd press)
                 ▼
 ┌─────────────────────────────────────────────────────────┐
-│                     STATE: PANIC                         │
-│  • SOS SMS dispatched via SIM800L                        │
-│  • GPS coordinates embedded in message                   │
-│  • Google Maps link generated                            │
-│  • LED: RED flashing rapidly                             │
-│  • Button press (3rd press) → returns to IDLE            │
+│                     STATE: PANIC                        │
+│  • SOS SMS dispatched via SIM800L                       │
+│  • GPS coordinates embedded in message                  │
+│  • Google Maps link generated                           │
+│  • LED: RED flashing rapidly                            │
+│  • Button press (3rd press) → returns to IDLE           │
 └─────────────────────────────────────────────────────────┘
 ```
 
