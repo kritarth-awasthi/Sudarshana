@@ -42,11 +42,11 @@ GND          ──── GND
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                      STATE: IDLE                         │
-│  • Sensors powered OFF (MAX30105 shutdown mode)          │
-│  • GPS parser running (passive)                          │
-│  • ESP32 in light sleep between button polls             │
-│  • LED: OFF                                              │
+│                      STATE: IDLE                        │
+│  • Sensors powered OFF (MAX30105 shutdown mode)         │
+│  • GPS parser running (passive)                         │
+│  • ESP32 in light sleep between button polls            │
+│  • LED: OFF                                             │
 └───────────────┬─────────────────────────────────────────┘
                 │ Button press (1st press)
                 │ ROADMAP: Geofence entry from Android app
