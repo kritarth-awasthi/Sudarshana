@@ -47,7 +47,6 @@ bool          sosConfirmed    = false;
 volatile bool buttonPressed = false;
 void IRAM_ATTR onButtonPress() { buttonPressed = true; }
 
-// ===========================================================================
 void setup() {
   Serial.begin(115200);
   Serial.println(F("\n[SUDARSHANA] Booting..."));
@@ -82,7 +81,6 @@ void setup() {
   Serial.println(F("[SUDARSHANA] Boot complete. State: IDLE"));
 }
 
-// ===========================================================================
 void loop() {
   gpsHandler.update();
 
@@ -123,9 +121,8 @@ void loop() {
   }
 }
 
-// ===========================================================================
 // STATE TRANSITIONS
-// ===========================================================================
+
 void enterIdle() {
   currentState = STATE_IDLE;
   sensors.sleep();
@@ -150,9 +147,8 @@ void enterPanic() {
   Serial.println(F("[STATE] → PANIC"));
 }
 
-// ===========================================================================
 // BUTTON HANDLER
-// ===========================================================================
+
 void handleButtonPress() {
   Serial.println(F("[BUTTON] Triggered"));
   switch (currentState) {
@@ -162,18 +158,15 @@ void handleButtonPress() {
   }
 }
 
-// ===========================================================================
 // ADRENALINE SPIKE DETECTION
 // Combines HR elevation + GSR increase — both must exceed threshold.
 // ROADMAP: Replace with TFLite Micro ML model trained on stress datasets.
-// ===========================================================================
 bool isAdrenalineSpike(float heartRate, float gsrValue) {
   return (heartRate > HR_PANIC_THRESHOLD) && (gsrValue > GSR_PANIC_THRESHOLD);
 }
 
-// ===========================================================================
 // SOS DISPATCH
-// ===========================================================================
+
 void dispatchSOS() {
   Serial.println(F("[SOS] Building distress message..."));
 
