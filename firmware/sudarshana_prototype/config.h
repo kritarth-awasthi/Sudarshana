@@ -20,24 +20,24 @@
 #define GSM_RX_PIN            16
 #define GSM_BAUD           9600
 
-// ── GPS (NEO-6M) ──────────────────────────────────────────────────────────────
+// ── GPS (NEO-6M) 
 #define GPS_TX_PIN            19
 #define GPS_RX_PIN            18
 #define GPS_BAUD           9600
 
-// ── Heart Rate (MAX30105) I2C ─────────────────────────────────────────────────
+// ── Heart Rate (MAX30105) I2C 
 #define HR_SDA_PIN            21    // Default ESP32 I2C SDA
 #define HR_SCL_PIN            22    // Default ESP32 I2C SCL
 
-// ── Sensor Thresholds ─────────────────────────────────────────────────────────
+// ── Sensor Thresholds 
 // HR: Normal resting 60-80 BPM. Panic threshold set at acute stress level.
 #define HR_PANIC_THRESHOLD   110.0f  // BPM — sustained elevation = stress
 // GSR: Higher value = higher conductance = more stress sweat response
 #define GSR_PANIC_THRESHOLD  600.0f  // Raw ADC value (0-4095 on ESP32 12-bit)
 
-// ── Timing ────────────────────────────────────────────────────────────────────
+// ── Timing 
 #define SENSOR_READ_INTERVAL_MS  1000   // Read sensors every 1 second in ALERT
 #define PANIC_SUSTAIN_MS         5000   // Spike must sustain 5s to trigger SOS
 
-// ── Debug ─────────────────────────────────────────────────────────────────────
+// ── Debug
 #define DEBUG_MODE  true   // Set false to disable Serial output in production
