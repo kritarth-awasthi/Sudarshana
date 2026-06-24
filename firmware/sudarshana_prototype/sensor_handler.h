@@ -6,13 +6,13 @@
  * The system uses two physiological signals simultaneously:
  *
  * 1. Heart Rate (MAX30105 optical sensor)
- *    — Elevated HR (>110 BPM) indicates sympathetic nervous system activation
- *    — Red LED reflects off blood vessels; photodetector measures pulse
+ *    — Elevated HR (>110 BPM) indicates sympathetic nervous system activation.
+ *    — Red LED reflects off blood vessels; photodetector measures pulse.
  *
  * 2. Galvanic Skin Response / GSR (analog sensor on GPIO34)
- *    — Stress triggers eccrine sweat glands, increasing skin conductance
- *    — Higher ADC reading = higher conductance = more stress response
- *    — Used in lie detectors and clinical stress assessment
+ *    — Stress triggers eccrine sweat glands, increasing skin conductance.
+ *    — Higher ADC reading = higher conductance = more stress response.
+ *    — Used in lie detectors and clinical stress assessment.
  *
  * Both must exceed threshold simultaneously to trigger panic — prevents
  * false positives from exercise (HR up, GSR normal) or humidity (GSR up, HR normal).
