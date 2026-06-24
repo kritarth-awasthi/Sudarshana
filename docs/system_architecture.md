@@ -89,4 +89,4 @@ Replace threshold logic with a TFLite Micro classification model:
 - Output: stress probability score → trigger at >0.85 confidence.
 
 ---
-*Kritarth Awasthi | BIT Mesra, Jaipur*
+*Kritarth Awasthi 
