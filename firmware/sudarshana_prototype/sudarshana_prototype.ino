@@ -3,7 +3,7 @@
  * ║                    S U D A R S H A N A                       ║
  * ║              IoT Safety Wearable — Prototype v1.0            ║
  * ║                                                              ║
- * ║  Developer : Kritarth Awasthi | BIT Mesra, Jaipur            ║
+ * ║  Developer : Kritarth Awasthi                                ║
  * ║  Hardware  : ESP32 + MAX30105 + GSR + SIM800L + NEO-6M       ║
  * ║  Status    : Prototype — SOS to hardcoded number             ║
  * ╚══════════════════════════════════════════════════════════════╝
@@ -161,6 +161,7 @@ void handleButtonPress() {
 // ADRENALINE SPIKE DETECTION
 // Combines HR elevation + GSR increase — both must exceed threshold.
 // ROADMAP: Replace with TFLite Micro ML model trained on stress datasets.
+
 bool isAdrenalineSpike(float heartRate, float gsrValue) {
   return (heartRate > HR_PANIC_THRESHOLD) && (gsrValue > GSR_PANIC_THRESHOLD);
 }
