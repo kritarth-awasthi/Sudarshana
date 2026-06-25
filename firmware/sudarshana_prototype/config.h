@@ -5,7 +5,7 @@
 
 #pragma once
 
-// ── Emergency Contact (Prototype)
+//  Emergency Contact (Prototype)
 // ROADMAP: Store multiple contacts fetched from Android app
 #define EMERGENCY_NUMBER      "+91XXXXXXXXXX"  // Replace with actual number
 
