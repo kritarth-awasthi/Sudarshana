@@ -23,27 +23,27 @@
 #include "gps_handler.h"
 #include "sensor_handler.h"
 
-// ── System State Machine 
+//  System State Machine 
 enum SystemState { STATE_IDLE, STATE_ALERT, STATE_PANIC };
 SystemState currentState = STATE_IDLE;
 
-// ── Hardware Serial Ports 
+//  Hardware Serial Ports 
 HardwareSerial gsmSerial(1);  // SIM800L  → UART1: TX=GPIO17, RX=GPIO16
 HardwareSerial gpsSerial(2);  // NEO-6M   → UART2: TX=GPIO19, RX=GPIO18
 
-// ── Object Instances 
+//  Object Instances 
 TinyGPSPlus   gps;
 MAX30105      heartRateSensor;
 GSMHandler    gsm(&gsmSerial);
 GPSHandler    gpsHandler(&gpsSerial, &gps);
 SensorHandler sensors(&heartRateSensor);
 
-// ── Timing Variables 
+//  Timing Variables 
 unsigned long alertStartTime  = 0;
 unsigned long lastSensorRead  = 0;
 bool          sosConfirmed    = false;
 
-// ── Button Interrupt 
+//  Button Interrupt 
 volatile bool buttonPressed = false;
 void IRAM_ATTR onButtonPress() { buttonPressed = true; }
 
