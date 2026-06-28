@@ -29,16 +29,16 @@ Sudarshana was conceived as a complete personal safety ecosystem — not just a 
 - Physical panic button
 
 ## Phase 2 — Android App Integration (Planned)
-- BLE pairing between wearable and app
-- Dynamic emergency contact management
-- User-defined danger zone geofencing
-- Real-time location sharing during panic
+- BLE pairing between wearable and app.
+- Dynamic emergency contact management.
+- User-defined danger zone geofencing.
+- Real-time location sharing during panic.
 
 ## Phase 3 — ML Adrenaline Classifier (Planned)
-- Collect labelled HR + GSR dataset across stress/non-stress states
-- Train binary classifier (stressed / not-stressed)
-- Quantise and deploy on ESP32 via TFLite Micro
-- Replace threshold logic with model inference
+- Collect labelled HR + GSR dataset across stress/non-stress states.
+- Train binary classifier (stressed / not-stressed).
+- Quantise and deploy on ESP32 via TFLite Micro.
+- Replace threshold logic with model inference.
 
 ## Phase 4 — Environmental Awareness (Planned)
 - Integration with crime statistics API (NCRB data).
