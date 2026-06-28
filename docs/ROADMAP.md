@@ -41,6 +41,6 @@ Sudarshana was conceived as a complete personal safety ecosystem — not just a 
 - Replace threshold logic with model inference
 
 ## Phase 4 — Environmental Awareness (Planned)
-- Integration with crime statistics API (NCRB data)
-- Automatic alert mode activation in high-risk zones
-- Nearest police station geolocation and SMS routing
+- Integration with crime statistics API (NCRB data).
+- Automatic alert mode activation in high-risk zones.
+- Nearest police station geolocation and SMS routing.
