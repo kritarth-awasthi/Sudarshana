@@ -28,10 +28,10 @@ The complete application was designed to include:
 
 ## Why BLE for App ↔ Device Communication
 BLE was chosen over WiFi for the full vision because:
-1. Low power drain during continuous operation.
-2. No network infrastructure dependency.
-3. Direct phone-to-device pairing without router.
-4. Standard Android BLE APIs — no custom drivers.
+1. Low power drain during continuous operation
+2. No network infrastructure dependency
+3. Direct phone-to-device pairing without router
+4. Standard Android BLE APIs — no custom drivers
 
 ---
 *Kritarth Awasthi  | Jan 2024 – May 2025*
