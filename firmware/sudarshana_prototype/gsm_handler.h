@@ -22,7 +22,7 @@ public:
     sendAT("AT+CREG?");   // Check network registration
     delay(1000);
 
-    Serial.println(F("[GSM] Network registered"));
+    Serial.println(F("[GSM] Network registered!"));
     return true;
   }
 
