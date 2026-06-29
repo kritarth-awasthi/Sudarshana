@@ -38,13 +38,13 @@ public:
   void wake() {
     _sensor->wakeUp();
     _sensorAwake = true;
-    Serial.println(F("[SENSORS] Awake"));
+    Serial.println(F("[SENSORS] Awake!!"));
   }
 
   void sleep() {
     _sensor->shutDown();
     _sensorAwake = false;
-    Serial.println(F("[SENSORS] Sleeping"));
+    Serial.println(F("[SENSORS] Sleeping...."));
   }
 
   // Returns smoothed heart rate in BPM.
