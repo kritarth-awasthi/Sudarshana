@@ -7,7 +7,7 @@
 
 //  Emergency Contact (Prototype)
 // ROADMAP: Store multiple contacts fetched from Android app
-#define EMERGENCY_NUMBER      "+yyXXXXXXXXXX"  // Replace with actual number, +yy is Country Code
+#define EMERGENCY_NUMBER      "+yyXXXXXXXXXX"  // Replace with actual number, +yy is Country Code and XXXXXXXXXX is actual number
 
 //  GPIO Pin Assignments 
 #define PIN_PANIC_BUTTON       0    // Physical panic/alert toggle button
