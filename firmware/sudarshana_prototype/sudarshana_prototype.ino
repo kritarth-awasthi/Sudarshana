@@ -178,7 +178,7 @@ void dispatchSOS() {
   message += "Location: https://maps.google.com/?q=";
   message += String(lat, 6) + "," + String(lng, 6);
 
-  Serial.println(F("[SOS] Sending SMS..."));
+  Serial.println(F("[SOS] Sending SMS...."));
 
   // Prototype: hardcoded emergency number
   // ROADMAP: Fetch contact list from Android app sync via BLE/WiFi
@@ -188,5 +188,5 @@ void dispatchSOS() {
     delay(5000);
     gsm.sendSMS(EMERGENCY_NUMBER, message);  // Single retry
   }
-  Serial.println(sent ? F("[SOS] Sent") : F("[SOS] Failed after retry"));
+  Serial.println(sent ? F("[SOS] Sent") : F("[SOS] FAILED AFTER RETRY!!"));
 }
