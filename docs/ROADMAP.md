@@ -35,12 +35,12 @@ Sudarshana was conceived as a complete personal safety ecosystem — not just a 
 - Real-time location sharing during panic.
 
 ## Phase 3 — ML Adrenaline Classifier (Planned)
-- Collect labelled HR + GSR dataset across stress/non-stress states
-- Train binary classifier (stressed / not-stressed)
-- Quantise and deploy on ESP32 via TFLite Micro
-- Replace threshold logic with model inference
+- Collect labelled HR + GSR dataset across stress/non-stress states.
+- Train binary classifier (stressed / not-stressed).
+- Quantise and deploy on ESP32 via TFLite Micro.
+- Replace threshold logic with model inference.
 
 ## Phase 4 — Environmental Awareness (Planned)
-- Integration with crime statistics API (NCRB data)
-- Automatic alert mode activation in high-risk zones
-- Nearest police station geolocation and SMS routing
+- Integration with crime statistics API (NCRB data).
+- Automatic alert mode activation in high-risk zones.
+- Nearest police station geolocation and SMS routing.
