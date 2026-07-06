@@ -21,17 +21,17 @@ The complete application was designed to include:
   via Google Maps API; device automatically enters ALERT mode on entry.
 - **BLE Sync** — push selected contacts and danger zone polygons to
   ESP32 SPIFFS storage via Bluetooth Low Energy.
-- **Live Tracking** — real-time location session when PANIC mode is active.
+- **Live Tracking** — real-time location session when PANIC mode is active
 - **Crime Area Integration** — pull crime-prone area data from public
-  government datasets to auto-trigger ALERT mode.
-- **SOS Dashboard** — confirm SOS received, track responder status.
+  government datasets to auto-trigger ALERT mode
+- **SOS Dashboard** — confirm SOS received, track responder status
 
 ## Why BLE for App ↔ Device Communication
 BLE was chosen over WiFi for the full vision because:
-1. Low power drain during continuous operation.
-2. No network infrastructure dependency.
-3. Direct phone-to-device pairing without router.
-4. Standard Android BLE APIs — no custom drivers.
+1. Low power drain during continuous operation
+2. No network infrastructure dependency
+3. Direct phone-to-device pairing without router
+4. Standard Android BLE APIs — no custom drivers
 
 ---
 *Kritarth Awasthi  | Jan 2024 – May 2025*
