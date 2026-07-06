@@ -75,18 +75,18 @@ GND          ──── GND
 
 The prototype uses a dual-threshold approach:
 
-- **Heart Rate** > 110 BPM (sympathetic nervous system activation).
-- **GSR** > 600 ADC units (eccrine gland activation = stress sweat).
+- **Heart Rate** > 110 BPM (sympathetic nervous system activation)
+- **GSR** > 600 ADC units (eccrine gland activation = stress sweat)
 
 Both must be elevated simultaneously. This prevents false positives:
-- Exercise alone: HR up, GSR elevated but from heat not stress.
-- Humidity: GSR up, HR normal → no trigger.
+- Exercise alone: HR up, GSR elevated but from heat not stress
+- Humidity: GSR up, HR normal → no trigger
 
 ### Roadmap: ML-Based Detection
 Replace threshold logic with a TFLite Micro classification model:
-- Training data: labelled physiological stress datasets (WESAD, DEAP).
-- Features: HR variability (HRV), GSR slope, GSR amplitude.
-- Output: stress probability score → trigger at >0.85 confidence.
+- Training data: labelled physiological stress datasets (WESAD, DEAP)
+- Features: HR variability (HRV), GSR slope, GSR amplitude
+- Output: stress probability score → trigger at >0.85 confidence
 
 ---
 *Kritarth Awasthi 
