@@ -22,11 +22,11 @@ Sudarshana was conceived as a complete personal safety ecosystem — not just a 
 ```
 
 ## Phase 1 — Prototype (Complete)
-- Biometric monitoring (HR + GSR).
-- Threshold-based spike detection.
-- GPS coordinate acquisition.
-- SOS SMS to hardcoded number.
-- Physical panic button.
+- Biometric monitoring (HR + GSR)
+- Threshold-based spike detection
+- GPS coordinate acquisition
+- SOS SMS to hardcoded number
+- Physical panic button
 
 ## Phase 2 — Android App Integration (Planned)
 - BLE pairing between wearable and app.
