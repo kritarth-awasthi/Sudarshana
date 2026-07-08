@@ -77,30 +77,30 @@ Location: https://maps.google.com/?q=26.912434,75.787271
 
 ## Setup
 
-1. Install required libraries (see `firmware/sudarshana_prototype/libraries.txt`).
-2. Open `firmware/sudarshana_prototype/sudarshana_prototype.ino` in Arduino IDE.
-3. Edit `config.h` — set `EMERGENCY_NUMBER` and verify GPIO pins match your wiring.
-4. Select board: `ESP32 Dev Module`.
-5. Flash at 115200 baud.
-6. Monitor Serial at 115200 for debug output.
+1. Install required libraries (see `firmware/sudarshana_prototype/libraries.txt`)
+2. Open `firmware/sudarshana_prototype/sudarshana_prototype.ino` in Arduino IDE
+3. Edit `config.h` — set `EMERGENCY_NUMBER` and verify GPIO pins match your wiring
+4. Select board: `ESP32 Dev Module`
+5. Flash at 115200 baud
+6. Monitor Serial at 115200 for debug output
 
 ---
 
 ## Full Vision Roadmap
 
-- [ ] Android app — contact selection, danger zone mapping, BLE sync to device.
-- [ ] Geofencing — auto ALERT on entry into marked danger zones.
-- [ ] Crime area auto-trigger — public dataset integration.
-- [ ] Multi-contact SOS dispatch.
-- [ ] ML-based stress detection (TFLite Micro).
-- [ ] Nearest police station notification.
-- [ ] V2 hardware — smaller form factor, dedicated PCB.
+- [ ] Android app — contact selection, danger zone mapping, BLE sync to device
+- [ ] Geofencing — auto ALERT on entry into marked danger zones
+- [ ] Crime area auto-trigger — public dataset integration
+- [ ] Multi-contact SOS dispatch
+- [ ] ML-based stress detection (TFLite Micro)
+- [ ] Nearest police station notification
+- [ ] V2 hardware — smaller form factor, dedicated PCB
 
 ---
 
 ## Circuit Diagram
 
-See `docs/system_architecture.md` for full wiring reference.
+See `docs/system_architecture.md` for full wiring reference
 
 ---
 
