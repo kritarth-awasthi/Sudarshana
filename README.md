@@ -100,7 +100,7 @@ Location: https://maps.google.com/?q=26.912434,75.787271
 
 ## Circuit Diagram
 
-See `docs/system_architecture.md` for full wiring reference
+See `docs/system_architecture.md` for full wiring reference.
 
 ---
 
