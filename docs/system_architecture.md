@@ -4,12 +4,12 @@
 
 | Component | Model | Role |
 |---|---|---|
-| Microcontroller | ESP32 (Dual-Core 240MHz) | Central processing, state machine |
-| Heart Rate Sensor | MAX30105 (I2C) | Optical pulse detection via photoplethysmography |
-| GSR Sensor | Analog (GPIO34 ADC) | Galvanic skin response — sweat conductance |
-| GSM Module | SIM800L | SMS SOS dispatch |
-| GPS Module | NEO-6M (UART) | Coordinate acquisition |
-| Panic Button | SPDT Momentary | Manual ALERT/PANIC toggle |
+| Microcontroller | ESP32 (Dual-Core 240MHz) | Central processing, state machine. |
+| Heart Rate Sensor | MAX30105 (I2C) | Optical pulse detection via photoplethysmography. |
+| GSR Sensor | Analog (GPIO34 ADC) | Galvanic skin response — sweat conductance. |
+| GSM Module | SIM800L | SMS SOS dispatch. |
+| GPS Module | NEO-6M (UART) | Coordinate acquisition. |
+| Panic Button | SPDT Momentary | Manual ALERT/PANIC toggle. |
 
 ## Pin Wiring
 
