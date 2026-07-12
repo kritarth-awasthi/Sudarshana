@@ -84,9 +84,9 @@ Both must be elevated simultaneously. This prevents false positives:
 
 ### Roadmap: ML-Based Detection
 Replace threshold logic with a TFLite Micro classification model:
-- Training data: labelled physiological stress datasets (WESAD, DEAP)
-- Features: HR variability (HRV), GSR slope, GSR amplitude
-- Output: stress probability score → trigger at >0.85 confidence
+- Training data: labelled physiological stress datasets (WESAD, DEAP).
+- Features: HR variability (HRV), GSR slope, GSR amplitude.
+- Output: stress probability score → trigger at >0.85 confidence.
 
 ---
 *Kritarth Awasthi 
