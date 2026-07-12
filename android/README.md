@@ -9,9 +9,9 @@ Direct ESP32 ↔ App communication was not implemented in the prototype.
 All device output was routed through the SIM800L GSM module.
 
 ## Tech Stack
-- Kotlin
-- Android SDK
-- SMS receiver (for prototype)
+- Kotlin.
+- Android SDK.
+- SMS receiver (for prototype).
 
 ## Full Vision Roadmap
 The complete application was designed to include:
