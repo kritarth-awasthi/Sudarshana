@@ -1,6 +1,6 @@
-# Sudarshana — IoT Safety Wearable
+# Sudarshana - IoT Safety Wearable
 
-> Wearable panic-detection device that monitors physiological stress indicators.
+> Wearable panic detection device that monitors physiological stress indicators.
 > and automatically dispatches GPS SOS via GSM upon adrenaline spike detection.
 
 **Status:** Prototype complete · Full vision in roadmap  
@@ -11,13 +11,13 @@
 
 ## What it does
 
-The device continuously monitors two biometric signals — heart rate and galvanic
-skin response (GSR/skin conductance) — to detect physiological stress signatures
+The device continuously monitors two biometric signals: heart rate and galvanic
+skin response (GSR/skin conductance) to detect physiological stress signatures
 associated with an adrenaline spike. When both signals exceed threshold simultaneously,
 the device automatically transmits an SOS SMS containing a live Google Maps link
 to emergency contacts via the SIM800L GSM module.
 
-A physical button provides manual override — one press enters ALERT mode
+A physical button provides manual override: one press enters ALERT mode
 (sensors active), second press triggers immediate SOS.
 
 ---
